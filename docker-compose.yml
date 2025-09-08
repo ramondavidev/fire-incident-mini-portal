@@ -1,0 +1,48 @@
+services:
+  # Frontend Service
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - BACKEND_URL=http://backend:3001
+    depends_on:
+      - backend
+
+  # Backend Service
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "3001:3001"
+    environment:
+      - NODE_ENV=production
+      - API_TOKEN=fire-incident-secret-2024
+      - ALLOWED_ORIGINS=http://localhost:3000,http://127.0.0.1:3000
+      - UPLOAD_DIR=uploads
+      - LOG_LEVEL=info
+    volumes:
+      - uploads-data:/app/uploads
+      - logs-data:/app/logs
+
+  # Redis (optional, for production-like rate limiting)
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    command: redis-server --appendonly yes
+    volumes:
+      - redis-data:/data
+
+volumes:
+  uploads-data:
+  logs-data:
+  redis-data:
+
+networks:
+  default:
+    name: fire-incident-network
