@@ -296,17 +296,17 @@ fire-incident-mini-portal/
 
 ## 📸 Screenshots
 
-### Dashboard View
+### List
 
-<img width="1121" height="1264" alt="image" src="https://github.com/user-attachments/assets/34b3c509-27ac-4809-969a-734f923895a7" />
+<img width="1121" height="1264" alt="Screenshot 2025-09-07 212914" src="https://github.com/user-attachments/assets/2827d5dd-f29f-41a7-abc3-0ce1a6930fdc" />
 
 ### Create Incident Form
 
-<img width="1118" height="938" alt="image" src="https://github.com/user-attachments/assets/50a0cf2c-30bd-450a-b30c-6a28301de6ca" />
+<img width="1094" height="845" alt="Screenshot 2025-09-07 212242" src="https://github.com/user-attachments/assets/965cd9c4-a9e5-42bb-b038-22e53150fff2" />
 
 ### Docker containers running
 
-<img width="1795" height="729" alt="Screenshot 2025-09-07 100202" src="https://github.com/user-attachments/assets/fd756509-8119-498c-9372-b3f6729f14ce" />
+<img width="1795" height="729" alt="Screenshot 2025-09-07 100202" src="https://github.com/user-attachments/assets/e8b45991-e0b5-4cbf-9a50-4f9ea3e712fc" />
 
 ---
 
